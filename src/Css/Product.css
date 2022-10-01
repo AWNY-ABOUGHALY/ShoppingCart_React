@@ -1,0 +1,45 @@
+.itemcontent {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px 0px;
+}
+.itemcont {
+    width: 150px;
+}
+button.prod {
+    color: white;
+    border: none;
+    border-radius: 3px!important;
+    width: 130px;
+    height: 45px;
+}
+button.del {
+    background-color: darkred;
+}
+button.plus {
+    background-color: #017c01;
+    font-size: 22px!important;
+}
+button.minus {
+    background-color:#ffe135;
+    font-size: 22px!important;
+    color: #000;
+}
+button.del:active {
+    background-color: #e90000;
+}
+button.plus:active {
+    background-color: #00c400;
+}
+button.minus:active {
+    background-color:#ffea70;
+}
+.emptyDiv {
+    font-size: 30px;
+    font-weight: bold;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
