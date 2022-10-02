@@ -1,11 +1,5 @@
-.itemcontent {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 5px 0px;
-}
 .itemcont {
-    width: 150px;
+    padding: 5px;
 }
 button.prod {
     color: white;
@@ -42,4 +36,7 @@ button.minus:active {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.control {
+    width: 180px;
 }

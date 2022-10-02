@@ -11,6 +11,16 @@ class App extends Component{
       { id: 3, name: "Pepsi", count: 5},
     ]
   }
+  
+  items = this.state.Products
+  itemsCount = this.items.map(e=>e.count)
+  reload = ()=>{
+    let Products = this.items.map(e=>{
+      e.count = this.itemsCount[e.id]
+      return e
+    })
+    this.setState({Products})
+  }
 
   reset = ()=>{
   let Products = this.state.Products;
@@ -56,6 +66,7 @@ class App extends Component{
         <Maincontent 
           Products={this.state.Products}
           resetFunc={this.reset}
+          reloadFunc={this.reload}
           increment={this.increase}
           decrement={this.decrease}
           delete={this.del}/>
